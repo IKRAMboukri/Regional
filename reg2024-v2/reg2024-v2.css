@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 3px solid grey;
+}
+.container1{
+    border: solid;
+}
+h5{
+    text-align: center;
+}
+.inscription{
+    display: flex;
+    justify-content: center;
+}
+.cont-1{
+    
+    display: flex;
+}
+.cont-2{
+    display: flex;
+}
+.temps{
+    display: flex;
+}
+.container2{
+    border: solid;
+    display: flex;
+}
+input{
+    padding: 8px;
+}
+input:active{
+    border: blue;
+    text-shadow:4px blue;
+}
+.les-bouttons{
+    text-align: right;
+    
+}
+
