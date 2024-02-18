@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 .container{
@@ -15,7 +15,7 @@ h5{
     justify-content: center;
 }
 .cont-1{
-    
+
     display: flex;
 }
 .cont-2{
@@ -37,6 +37,83 @@ input:active{
 }
 .les-bouttons{
     text-align: right;
+
+}
+ */
+
+h5 {
+  text-align: center;
+}
+.inscription {
+  text-align: center;
+}
+.nom {
+  display: flex;
+  align-items: start;
+  width: 70%;
+  
+}
+.nom fieldset{
+    width: 30%;
+}
+
+.cont-1 {
+  display: flex;
+}
+input[type="radio"]{
+    width:auto;
+}
+select{
+    width: 100%;
+    border: none;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+.cont-2 {
+  display: flex;
+  width: 70%;
+}
+.cont-2 fieldset{
+    width:30%;
+}
+.date {
+  display: flex;
+  
+}
+.temps{
+    width: 10%;
+}
+.annee{
+    width:80%;
+}
+.temps_para{
+    width: 30%;
     
 }
+.container2 {
+  display: flex;
+}
+.les-bouttons {
+  text-align: right;
+}
+.container2 fieldset{
+    width:30%;
+}
+fieldset{
+    border-radius: 5px;
+}
+input:focus{
+    border: solid blue;
+    box-shadow: 3px 3px 3px;
+    outline: none;
+}
+button:focus{
+    background-color:blue;
+
+}
+
 

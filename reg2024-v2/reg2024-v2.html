@@ -15,51 +15,90 @@
        <input type="radio" id="non-inscri" name="radio">
        <label for="non-inscri">je veux créer une nouvelleinscription</label>
     </div>
-    <div class="container1">
-        <p>Informations du chef de ménage:</p>
+    <fieldset class="container1">
+        <legend>Informations du chef de ménage:</legend>
         <div class="cont-1">
-            <h6>IDCS:*</h6>
-            <input type="text" placeholder="Identifiant Digital Civil et Social">
-            <h6>Nom:*</h6>
-            <input type="text">
-            <h6>Prenom:*</h6>
-            <input type="text">
+          <div class="nom">
+            <fieldset>
+              <legend>IDCS:<span>*</span></legend>
+              <input type="text" placeholder="Identifiant Digital Civil et Social" required>
+            </fieldset>
+            <fieldset>
+              <legend>Nom:<span>*</span></legend>
+            
+              <input type="text">
+            </fieldset>
+          
+
+            <fieldset>
+            <legend>Prenom:<span>*</span></legend>
+             <input type="text" required>
+            </fieldset>
+          </div>
+            
             <div class="temps_para">
-              <div class="temps">
-                <h6>Jour:</h6>
-                <input type="jour" placeholder="JJ">
-                <h6>Mois:</h6>
-                <input type="mois" placeholder="MM">
-                <h6>Année:*</h6>
-                <input type="année" placeholder="AAAA">
-              </div><br>
+              <div class="date">
+              <fieldset class="temps">
+                <legend>Jour:</legend>
+                <input type="text" placeholder="JJ">
+              </fieldset>
+              <fieldset class="temps">
+                <legend>Mois:</legend>
+                <input type="text" placeholder="JJ">
+              </fieldset>
+              <fieldset class="annee">
+                <legend>Année:</legend>
+                <input type="text" placeholder="JJ">
+              </fieldset>
+             </div>
+                
               <p>Si vous ne disposez pas du jour et du mois de naissance,laissez les deux cases<br>correspondantes vides</p>
             </div>
 
         </div>
         <div class="cont-2">
-            <h6>Genre:*</h6>
-            <input type="text" placeholder="">
-            <h6>Type de la piece d'identité:*</h6>
-            <input type="text">
-            <h6>Numéro de la piece d'identité:*</h6>
-            <input type="text">
+           
+            <fieldset>
+              <legend>Genre:*</legend>
+              <input type="radio" id="mas" name="genre">
+              <label for="mas">masculin</label>
+              <input type="radio" id="fem" name="genre">
+              <label for="fem">feminin</label>
+            </fieldset>
+            <fieldset>
+              <legend>Type de la piece d'identité:<span>*</span></legend>
+              <input type="text">
+            </fieldset>
+            <fieldset>
+             <legend>Numéro de la piece d'identité:<span>*</span></legend>
+             <input type="text">
+           </fieldset>
         </div>
-    </div>
-    <div class="container2">
-        <h6>Adress du ménage:</h6>
-        <h6>Region:*</h6>
-        <input type="text" placeholder="Sélectionnez un element">
-        <h6>Prefecture ou privince:*</h6>
-        <input type="text" placeholder="Sélectionnez un element">
-        <h6>Pachalik ou Cercle ou District:*</h6>
-        <input type="text" placeholder="Sélectionnez un élément">
-
-        
-    </div>
+    </fieldset>
+    <fieldset class="container2">
+        <legend>Adress du ménage Region:<span>*</span></legend>
+        <fieldset>
+          <legend>Région:<span>*</span></legend>
+          <select>
+            <option value="casa">Sélectionnez un élément</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Préfécture ou Province:<span>*</span></legend>
+          <select>
+            <option value="casa">Sélectionnez un élément</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Pachlik ou Cercle ou District:<span>*</span></legend>
+          <select>
+            <option value="casa">Sélectionnez un élément</option>
+          </select>
+        </fieldset>   
+    </fieldset>
     <div class="les-bouttons">
-      <button>ANNULER</button>
-      <button>VALIDER</button>
+      <button><img src=""> ANNULER</button>
+      <button><img src="">VALIDER</button>
     </div>
  </div>   
 </body>
